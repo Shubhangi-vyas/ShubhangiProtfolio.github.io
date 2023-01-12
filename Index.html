@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative CV</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            background-image: url(https://th.bing.com/th/id/OIP.fTCH36cdM7Z16jTCwtcynQHaDF?w=296&h=145&c=7&r=0&o=5&pid=1.7);
+            /* background-image: url(https://p2.piqsels.com/preview/745/724/30/bridge-nature-road-journey.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .content {
+            width: 80%;
+            margin: auto;
+        }
+
+        .part_up {
+            display: flex;
+            font-size: x-large;
+            color: aliceblue;
+            margin-bottom: 100px;
+        }
+
+        .creative {
+            margin-left: 70px;
+            margin-top: 20px;
+            border: 1px solid black;
+            box-shadow: 5px 3px 3px 3px white;
+            color: white;
+            padding: 10px;
+
+        }
+
+        .menu {
+            margin-left: 35%;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .a,
+        .s,
+        .p,
+        .e,
+        .c,
+        .ce {
+            margin-left: 50px;
+            border: 1px solid black;
+            box-shadow: 5px 3px 3px 3px whitesmoke;
+            padding: 5px;
+
+        }
+
+        .photo {
+            border: 5px solid white;
+            height: 200px;
+            width: 10%;
+            border-radius: 200%;
+            margin: auto;
+        }
+
+        img {
+            height: 200px;
+            width: 100%;
+            border-radius: 200%;
+            margin: auto;
+        }
+
+        .name,
+        .my_skills {
+            text-align: center;
+            color: aliceblue;
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            margin-left: 40%;
+            padding: 20px;
+        }
+
+        input[type=button],
+        select {
+            color: white;
+            background-color: rgb(34, 161, 34);
+            height: 50px;
+            font-size: larger;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        input[type=button]:hover {
+            background-color: gray;
+        }
+
+        .part_1,
+        .skills,
+        .matter {
+            display: flex;
+            margin: 50px;
+            border: 2px solid white;
+            box-shadow: 10px 5px 5px 10px rgb(245, 245, 245);
+        }
+
+        .matter {
+            font-size: larger;
+            word-spacing: 5px;
+        }
+
+        .about {
+            flex-basis: 55%;
+            word-spacing: 10px;
+            margin-left: 40px;
+        }
+
+        .intro {
+            font-size: larger;
+        }
+
+        .left_part {
+            display: flex;
+            line-height: 30px;
+            font-size: larger;
+            margin-top: -30px;
+        }
+
+        .left_part_a {
+            font-weight: bold;
+            line-height: 40px;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        .left_part_b {
+            line-height: 40px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .heading_2 {
+            margin-left: 40px;
+        }
+
+        .professional_skills,
+        .experience,
+        .education,
+        .certification {
+            text-align: center;
+        }
+
+        .linux,
+        .html {
+            flex-basis: 50%;
+            margin-left: 60px;
+            line-height: 50px;
+            font-size: x-large;
+            color: green;
+        }
+
+        #file1,
+        #file2,
+        #file3,
+        #file4 {
+            width: 80%;
+        }
+
+        .left_side {
+            flex-basis: 20%;
+            background-color: green;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .right_side {
+            margin-left: 50px;
+            flex-basis: 80%;
+        }
+
+        .contact {
+            border: 2px solid white;
+            color: white;
+            width: 50%;
+            height: 550px;
+            background-color: black;
+            margin: auto;
+            padding: 10px;
+
+
+        }
+
+        .map {
+            margin-top: 150px;
+            background-image: url(staticmap.png );
+            width: 100%;
+            height: 700px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button {
+            height: 50px;
+            width: 300px;
+            background-color: green;
+            color: white;
+            font-size: larger;
+            margin-left: 50px;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+
+        input[type="text"],
+        input[type=email] {
+            width: 100%;
+            padding: 8px;
+            margin: 20px;
+            font-size: larger;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .us {
+            text-align: center;
+        }
+
+        .free {
+            margin-left: 40px;
+            font-weight: bolder;
+        }
+
+        .full {
+            display: flex;
+        }
+
+        .full_side {
+            border: 2px solid black;
+            color: black;
+            background-color: white;
+            box-shadow: 10px 10px 10px 10px whitesmoke;
+            padding: 10px;
+            line-height: 50px;
+            word-spacing: 5px;
+            margin-left: 20%;
+            margin-top: -60px;
+        }
+
+        .ibm {
+            margin-top: 150px;
+            font-size: larger;
+        }
+
+        .address {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .details {
+            font-size: larger;
+        }
+
+        .link {
+            color: black;
+
+        }
+
+        .link:hover {
+            color: rgb(32, 153, 32);
+            box-shadow: 5px 5px 5px 5px black;
+        }
+
+        .h1 {
+            text-align: center;
+        }
+
+        .reserved {
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="part_up">
+            <div class="creative">
+                Creative CV
+            </div>
+            <div class="menu">
+                <div class="a"><a href="#part_a">About</a></div>
+                <div class="s"><a href="#part_2"> Skills</a></div>
+                <div class="e"><a href="#part_3"> Experience </a></div>
+                <div class="p"><a href="#part_4"> Education</a></div>
+                <div class="c"><a href="#footer">Contact</a></div>
+                <div class="ce"><a href="#part_5">Certification</a></div>
+            </div>
+        </div>
+        <div class="part_middle">
+            <div class="photo">
+                <img src="photo.jpg" alt="My Photo">
+            </div>
+            <div class="name">
+                Shubhangi Vyas
+            </div>
+            <div class="my_skills">
+                Fresher
+            </div>
+            <div class="buttons">
+                <div class="hire">
+                    <a href="#hire_me" target="_blank"><input type="button" value="Hire Me"></a>
+                </div>
+                <div class="download">
+                    <a href="Resume.html" target="_blank"> <input type="button" value=" Download CV"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="part_a">
+            <div class="part_1">
+                <div class="about">
+                    <div class="heading_1">
+                        <h1>About</h1>
+                    </div>
+                    <div class="intro">
+                        <p>Hello! I am Shubhangi Vyas, I am currently pursing Advanced diploma (Vocational) on "IT,
+                            Networking and cloud". Till now I have learnt Linux ,
+                            Networking , HTML and CSS. I am still working on my skills.</p>
+                    </div>
+                </div>
+                <div class="infomation">
+                    <div class="heading_2">
+                        <h1> Basic Information</h1>
+                    </div>
+                    <div class="left_part">
+                        <div class="left_part_a">
+
+                            <div>Age:-</div>
+                            <div>Email:-</div>
+                            <div>Phone:-</div>
+                            <div>Address:-</div>
+                            <div>Language:-</div>
+
+                        </div>
+                        <div class="left_part_b">
+
+                            <div>22</div>
+                            <div>shubhashubhangivyas@gmail.com</div>
+                            <div>9865741230</div>
+                            <div>Dayal Medical Store, Nagaur (Rajasthan)</div>
+                            <div>English, Hindi</div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="part_2">
+            <div class="professional_skills">
+                <h1>Professional Skills</h1>
+            </div>
+            <div class="skills">
+                <div class="linux">
+                    <label for="file1">Linux </label>
+                    <div>
+                        <meter id="file1" max="100" value="62"></meter> 62%
+                    </div>
+                    <label for="file2">Networking</label>
+                    <div>
+                        <meter id="file2" max="100" value="52"></meter> 52%
+                    </div>
+                </div>
+                <div class="html">
+                    <label for="file3">HTML </label>
+                    <div>
+                        <meter id="file3" max="100" value="65"></meter> 65%
+                    </div>
+                    <label for="file4">CSS</label>
+                    <div>
+                        <meter id="file4" max="100" value="50"></meter> 50%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part_3">
+            <div class="experience">
+                <h1> Work Experience</h1>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>JUNE 2022- PRESENT</p>
+                    <p>STUDENT</p>
+                </div>
+                <div class="right_side">
+                    <h2>Fresher</h2>
+                    Currently in the 1st year of ADIT Diploma.
+                </div>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>11 JULY -11 DECEMBER 2020</p>
+                    <p>INTERN</p>
+                </div>
+                <div class="right_side">
+                    <h2>Internship</h2>
+                    Completed 6 month of internship on UAV's during my academics from MANIT Bhopal under the supervision
+                    of Dr. Ujjwal Kumar Kalla (Associate Profressor,MANIT Bhopal)
+                </div>
+            </div>
+
+        </div>
+        <div id="part_4">
+            <div class="education">
+                <h1> Education</h1>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>2017-2021</p>
+                    <p>BACHELOR's DEGREE</p>
+                </div>
+                <div class="right_side">
+                    <h2>Bachelor Of Technology</h2>
+                    <p> BANASTHALI VIDHYAPITH</p>
+                    <p>Completed my Bachelor of technology in Mechtronics from Banasthli Vidhyapith in 2021 and have
+                        scored 7.2 CGPA. </p>
+                </div>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>2015-2017</p>
+                    <p>HIGH SCHOOL</p>
+                </div>
+                <div class="right_side">
+                    <h2>Science and Mathematics</h2>
+                    <p>School Of Secondary Board</p>
+                    <p> Completed my high school in 2017 from St. Anslem School , Nagaur (Rajasthan) with science and
+                        maths as the complusory subjects.</p>
+                </div>
+            </div>
+        </div>
+        <div id="part_5">
+            <div class="certification">
+                <h1>Certification</h1>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <div class="ibm">
+                        <p>IBM SkillsBuild Certificates</p>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <h2>Certificate 1</h2>
+                    Have completed many skills build certificates on:-
+                    <ul>
+                        <li><a class="link" href="1.png" target="_blank">What is open source </a></li>
+                        <li><a class="link" href="2.png" target="_blank">What is Iot technology</a></li>
+                        <li><a class="link" href="3.png" target="_blank">What does it means to be digitally literate</a>
+                        </li>
+                        <li><a class="link" href="4.png" target="_blank">The internet how searches works</a></li>
+                        <li><a class="link" href="5.png" target="_blank">Red hat enterprise Linux technical</a></li>
+                        <li><a class="link" href="6.png" target="_blank">Microsoft 365 training</a></li>
+                        <li><a class="link" href="7.png" target="_blank">Master power point 15 essential tips</a></li>
+                        <li><a class="link" href="8.png" target="_blank">Information literacy skills</a></li>
+                        <li><a class="link" href="9.png" target="_blank">Improving your computer literacy</a></li>
+                        <li><a class="link" href="10.png" target="_blank">How to create strong password</a></li>
+                        <li><a class="link" href="11.png" target="_blank">G Suite training</a></li>
+                        <li><a class="link" href="12.png" target="_blank">Being a good digital citizen</a></li>
+                        <li><a class="link" href="13.png" target="_blank">6 Ways to find what you want on the
+                                internet</a></li>
+                        <li><a class="link" href="14.png" target="_blank">10 tips that can make anyone a microsoft word
+                                expert</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>2018</p>
+                </div>
+                <div class="right_side">
+                    <h2>Certificate 2</h2>
+                    Awarded with a certificate in workshop on Android app development during my academics.
+                </div>
+            </div>
+            <div class="matter">
+                <div class="left_side">
+                    <p>2018</p>
+                </div>
+                <div class="right_side">
+                    <h2>Certificate 3</h2>
+                    Awarded with a certificate in workshop on bluetooth controlled spy robot during my academics.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <div id="hire_me">
+            <div class="map">
+                <div class="contact">
+                    <div class="us">
+                        <h1>Contact Me</h1>
+                    </div>
+                    <div class="free">
+                        <h2>Feel free to contact me:-</h2>
+                    </div>
+                    <div class="full">
+                        <div class="full_right">
+                            <form>
+                                <div><input type="text" placeholder="Name"></div>
+                                <div><input type="text" placeholder="Subject"></div>
+                                <div><input type="email" placeholder="E-mail"></div>
+                                <div><i class="fas fa-bars"></i><input type="text" placeholder="Your Message"></div>
+                                <button>Send</button>
+                            </form>
+                        </div>
+                        <div class="full_side">
+                            <div class="address">Address:-</div>
+                            <div class="details"> Dayal Medical Store , Nagaur (Rajasthan)</div>
+                            <div class="address">Phone Number:-</div>
+                            <div class="details">9588013028</div>
+                            <div class="address">Email:-</div>
+                            <div class="details">shubhashubhangivyas@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rights">
+            <div class="h1">
+                <h2>Shubhangi Vyas</h2>
+            </div>
+            <div class="reserved">@Creative CV All Rights Reserved.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
